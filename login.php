@@ -6,8 +6,8 @@ session_start();
 
 // Verificando se os campos de login foram preenchidos
 if (empty($_POST['user']) || empty($_POST['pass'])) {
-    // Usando header para redirecionamento sem depender do JavaScript
-    header('Location: index.php?erro=campos_vazios');
+    $_SESSION['campos_vazios'] = true;// Usando header para redirecionamento sem depender do JavaScript
+    header('Location: index.php');
     exit();
 }
 
@@ -25,16 +25,19 @@ if (mysqli_num_rows($result) == 1) {
     if (password_verify($senha, $row['senha'])) {
         // Senha correta
         $_SESSION['usuario'] = $usuario;
+        $_SESSION['autenticado'] = true;
         header('Location: painel.php');
         exit();
     } else {
         // Senha incorreta
-        header('Location: index.php?erro=senha_incorreta');
+        $_SESSION['senha_incorreta'] = true;
+        header('Location: index.php');
         exit();
     }
 } else {
     // Usuário não encontrado
-    header('Location: index.php?erro=usuario_nao_encontrado');
+    $_SESSION['user_nao_encontrado'] = true;
+    header('Location: index.php');
     exit();
 }
 ?>
