@@ -1,7 +1,7 @@
 <?php
 define ('HOST','127.0.0.1');
 define('USUARIO','root');
-define('SENHA','');
+define('SENHA','VoucherDev@2024');
 define('DB','petpet_db');
 
 

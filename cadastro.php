@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <div class="left">
-            <img class='logo_index' src="imagens\logo.svg" alt="logotipo">
+            <img class='logo_index' src="logo.svg" alt="logotipo">
             <h1 class="logo_name">PET PET</h1>
         </div>
         <div class="right">

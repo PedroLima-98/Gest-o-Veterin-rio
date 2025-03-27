@@ -1,0 +1,47 @@
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div-logo{
+    width: 400px;
+}
+
+#Botoes {
+    width: 400px;
+}
+#titulo-Pag{
+    color: white;
+    background-color: lightblue;
+    text-align: center;
+}
+
+
+#menuOp {
+    background-color: lightblue;
+    width: 200px;
+    height: 300px;
+}
+
+#RelaOp {
+    margin-top: 50px;
+    width: 800px;
+    height: 600px;
+    background-color: lightblue;
+    display: flex;
+}
+#Extrato {
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+}
+#Opções {
+    margin-top: 50px;
+    margin-left: 90px;
+    background-color: white;
+    width: 100px;
+    height: 200px;
+}
