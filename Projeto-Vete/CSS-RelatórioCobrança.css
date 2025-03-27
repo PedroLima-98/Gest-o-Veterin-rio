@@ -9,6 +9,7 @@
     height: 300px;
     margin-top: 150px;
     margin-left: 150px;
+    padding-left: 20px;
 }
 
 #Corpo {
@@ -24,17 +25,18 @@
     display: flex;
 }
 #Extrato {
+    padding-left: 30px;
     margin-top: 50px;
     margin-left: 50px;
     background-color: white;
-    width: 300px;
-    height: 400px;
+    width: 350px;
+    height: 420px;
     border-radius: 10px;
 }
 #Opções {
     border-radius: 10px;
     margin-top: 50px;
-    margin-left: 90px;
+    margin-left: 80px;
     background-color: white;
     width: 200px;
     height: 200px;
